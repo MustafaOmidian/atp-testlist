@@ -1,0 +1,921 @@
+1- MME	45
+Mobility Management	45
+T01 Attach-4G	45
+T01-0101 UE Initiating an Attach Procedure Using the IMSI	45
+T01-0102 • The UE has proper SIM card inserted. • The network coverage is adequate for LTE connectivity.	45
+T01-0103 UE Initiating an Attach Procedure Using the GUTI	46
+T01-0104 E-UTRAN Attach with Old GUTI When the Old GUTI Is Unknown on the MME and MME Initiates an Identity Request	48
+T02 Detach-4G	50
+T02-0101 UE Initiating a Detach Procedure	50
+T02-0102 MME Initiating a Detach Procedure	51
+T02-0103 HSS Initiating a Detach Procedure	53
+MME-initiated Implicit Detach	53
+T03 Tracking Area Update	54
+T03-0101 UE Initiating a Periodic TAU Procedure	54
+T03-0102 TAU intra MME in ECM-IDLE without SGW Changed	56
+T04 Service Requests	58
+T04-0101 UE Initiating a Service Request	58
+T05 Paging	60
+T05-0101 Downlink Data Triggering a Paging Procedure	60
+T05-0102 Downlink Signaling Triggering a Paging Procedure	61
+T06 S1 Interface Resource Release	62
+T06-0101 eNodeB Initiating a S1 Connection Releasing Procedure	62
+T06-0102 MME Initiating a S1 Connection Releasing Procedure	64
+2- Security Management	65
+T07 Authentication: Supporting EPS-AKA Authentication	65
+T07-0101 NAS Security: Negotiation over the NAS Security Mode Using AES	65
+T07-0102 Identity Authentication: Supporting the Identity Procedure	67
+T07-0103 CHECK IMEI: Initiating IMEI Check and Accepting the Attach Requests of UEs in the white list	68
+CHECK IMEI: Initiating IMEI Check and Accepting the Attach Requests of UEs in the white list	68
+T07-0104 CHECK IMEI: Initiating IMEI Check and Accepting the Attach Requests of UEs in the Grey list	69
+CHECK IMEI: Initiating IMEI Check and Accepting the Attach Requests of UEs in the Grey list	69
+T07-0105 CHECK IMEI: Initiating IMEI Check and Rejecting the Attach Requests of UEs in the Black List	70
+CHECK IMEI: Initiating IMEI Check and Rejecting the Attach Requests of UEs in the Black List	70
+3- Subscriber Data Management:	72
+T07-0106 Location Data Management: Supporting Purge UE	72
+4- Subscription Data Processing	73
+T07-0107 Inserting Mobile Subscriber Data	73
+ We can demonstrate the accuracy of this process to you using packet capture.	73
+T07-0108 Deleting Mobile Subscriber Data	73
+5- Session Management	73
+T08 Bearer Activation	73
+T08-0101 Default Bearer Activation During an Attach Procedure	73
+T08-0102 UE-initiated Dedicated Bearer Activation	75
+T09 Bearer Modification	77
+T09-0101 P-GW-initiated Bearer Modification	77
+T09-0102 HSS-initiated Bearer Modification	78
+ We can demonstrate the accuracy of this process to you using packet capture.	78
+T09-0103 P-GW-initiated Bearer Deactivation	78
+T09-0104 HSS Initiated Subscribed QoS Modification When the UE is in the ECM-IDLE State	79
+This means the Home Subscriber Server (HSS) is initiating a modification of the subscribed Quality of Service (QoS) for a user equipment (UE) that is in the ECM-IDLE state.	79
+T10 Bearer Deactivation	79
+T10-0101 P-GW-initiated Bearer Deactivation	79
+T10-0102 MME-initiated Bearer Deactivation	79
+T10-0103 UE-initiated Bearer Deactivation	80
+6- Supporting PDP Dual-stack	81
+T10-0104 Default Bearer Activation with an IPv6 Address During an Attach Procedure	81
+T10-0105 Default Bearer Activation with an IPv4/IPv6 Address During an Attach Procedure	82
+T10-0106 Multi-IMSI Function	83
+T10-0107 MME Supporting the Multi-IMSI Function	83
+T11 Reliability Function	83
+7- Process Redundancy Backup	83
+T12 Redundancy Backup of OMP Processes	83
+T13 Redundancy Backup of SPP Processes	84
+T14 Redundancy Backup of SGP Processes	84
+T15 Redundancy Backup of UPP Processes	85
+8- Tracing Management	85
+T16 Subscriber Tracing	85
+T16-0101 ATTACH AND DETACH	85
+T16-0102 User Tracing Based on IMSI	86
+T16-0103 User Tracing Based on MSISDN	86
+T16-0104 Supporting S1 Interface Traces	86
+T16-0105 Supporting S6a Interface Traces	87
+T17 GTPC Tracing	87
+9- NTP	88
+T18 NTP Server in the Maintenance Network Segment	88
+10- Static and Dynamic Routes	89
+T19 Supporting Static Routes	89
+T19-0101 Supporting Default Routes	90
+T19-0102 Supporting OSPF Routes	91
+T20 Packet Service Barring	92
+T21 Requested APN Correction	92
+ APN Correction for Inconsistent Subscribe APN and Request	92
+T21-0101 Packet Service Barring	92
+T22 Software Loading	92
+T22-0101 Patch Loading and Deletion	92
+T22-0102 LMT Login	93
+11- S/PGW	94
+T23 NE Status	94
+T23-0101 NE Status Query	94
+T23-0102 NE Reset	95
+T24 S11 Logical Interface Configuration	95
+T25 S5 Logical Interface Configuration	96
+T26 Gx(c) Logical Interface Configuration	97
+T27 Gy Logical Interface Configuration	97
+T28 SGi Interface Tracing	97
+T28-0101 Gx Interface Tracing	98
+T28-0102 S-GW S11 Interface Tracing	98
+T28-0103 S-GW S1-u Interface Tracing	100
+T29 Gy Interface Tracing	101
+T30 Subscriber Tracing	101
+T31 Software Loading	101
+T31-0101 Patch Loading and Deletion	101
+12- LMT Login	102
+13- Security and Reliability	103
+T32 APN Lock	103
+T33 APN Check	103
+T33-0101 APN management	104
+T33-0102 APN-based User Base Control	105
+14- PGW Supporting Default Bearer Activation	106
+15- PGW Supporting Default Bearer Deactivation	107
+T33-0103 P-GW Initiated Dedicated Bearer Activation	108
+T33-0104 P-GW Initiated Dedicated Bearer Modification with TFT Change	109
+T33-0105 P-GW initiated dedicated bearer modification with Traffic Flow Template (TFT) change	109
+T33-0106 P-GW Initiated Dedicated Bearer Deactivation	109
+16- Address Assignment	111
+T34 Dynamic Address Assignment from the Local Address Pool	111
+T35 Dynamic IPv6 Address Allocation	112
+T36 Access with a Static IPv6 Address	112
+T37 IPv4/IPv6 Dual Stack Access	113
+T38 IPv4/IPv6 Dual Stack Access	113
+17- QoS and Traffic Management`	114
+T39 Dedicated bearer activation	114
+T39-0101 Bearer modification with bearer QoS update	115
+T39-0102 PDN GW initiated bearer modification without bearer QoS update	117
+T39-0103 Bearer deactivation	118
+T39-0104 UE requested bearer resource modification	120
+T39-0105 E-UTRAN initiated E-RAB modification procedure	121
+T39-0106 E-UTRAN initiated UE Context Modification procedure	122
+T40 PGW Supporting HSS-initiated Bearer QoS Update	124
+18- Charging	126
+T41 Gy Interface Online Charging on the PGW	126
+T41-0101 Real-Time Charging for User Services	126
+19- Routing	126
+T42 Static Route	126
+T42-0101 Default Route	127
+T42-0102 Backup Routes	127
+T42-0103 Dynamic Route	128
+T42-0104 OSPF Route	129
+20- PCC Function	130
+T43 PCC Session Management	130
+T44 IP-CAN Sessions Established with the PCRF	130
+T45 QoS Control Based on Layer 3/Layer 4 Rules	130
+21- QoS Control Based on Layer 3/Layer 4 Rules	131
+T46 LMT Login	131
+بخش 2: NMS/OSS Tests	132
+T47 Operation and Maintenance	132
+T47-0101 Performance Management	132
+T47-0102 Supporting LTE Mobility Management	133
+T47-0103 LTE Session Management Measurement	134
+T47-0104 Creating a System Resource Measurement Task on the Web UI	135
+T47-0105 Creating an LTE Mobility Management Measurement Task on the Web UI	136
+T47-0106 Creating LTE Session Management Measurement Tasks on the Web UI	137
+T47-0107 Performance management	138
+T47-0108 Setting the Default Counter Measurement	138
+T47-0109 Management of Custom Counters	139
+T47-0110 Setting Threshold Alarm for Custom Counter	139
+T47-0111 Querying Operation Logs	140
+T48 Activating and Suspending Measurement	141
+T49 Browsing the Status of an NE	141
+T50 Fault Management	142
+T50-0101 Creating Threshold Alarms	142
+T50-0102 Querying History Alarms	142
+T50-0103 Querying Active Alarms	143
+T50-0104 Query of Alarm Details	144
+T50-0105 Module Alarms (Querying and Acknowledging)	145
+T50-0106 Alarm Browsing	146
+T51 Equipment Management	147
+T52 Querying Board Status	148
+T52-0101 Querying Module Status	148
+T52-0102 Querying Port Status	149
+T52-0103 LMT Lock	150
+T52-0104 Running MML Commands Relevant to the Nes	150
+T53 Real-Time Status Monitoring	151
+T53-0101 Real-Time CPU Usage Monitoring	152
+T53-0102 Real-Time Memory Usage Monitoring	153
+T54 Network Time Synchronization with the NTP Server	154
+T55 Information Collection	155
+T55-0101 NMS Basic Service	155
+T55-0102 Monitoring the NMS status	156
+T55-0103 Querying NMS License Information and Updating the License	157
+T55-0104 Web-based Installation and Automatic Upgrade on the NMS Client	157
+T55-0105 Centralized Task Management	157
+Centralized Task Management	157
+T55-0106	158
+T55-0107 Creating an NE Backup Task	158
+T55-0108 NMS Data Backup and Restore	160
+T56 Backing up Real-time Data	161
+T56-0101 Manually Backing Up NE Data	161
+T57 Configuration Management	162
+T57-0101 Auto Synchronization of NE Configuration	163
+Auto Synchronization of NE Configuration	163
+T58 Security Management	164
+T58-0101 Adding Users	164
+T58-0102 Deleting Users	165
+T58-0103 Adding User Groups	166
+T58-0104 Modifying User Groups	167
+T58-0105 Deleting User Groups	168
+T58-0106 Querying User Group Information	169
+T58-0107 Login with Invalid Password	170
+T58-0108 System Auto Locking	171
+T58-0109 User Rights Management	172
+T58-0110 Command Group Management	173
+T58-0111 User Login and Logout	174
+T59 NMS Log Management	175
+T59-0101 NMS Operation Log Record	176
+T59-0102 NMS System Log Record	177
+T59-0103 Log Generation and collection	178
+T59-0104 Log Storage and retention	179
+T59-0105 Log indexing and search	179
+T59-0106 Log Analysis and correlation	180
+T59-0107 Log Reporting and visualization	181
+T59-0108 Log access control and security	182
+T59-0109 Log Backup and disaster recovery	182
+T60 License and software Management	183
+T60-0101 Checking the NE license	183
+T60-0102 Upgrade/change NE license	183
+License Upgrade Process	184
+License Verification	184
+T60-0103 Back up NE license	184
+T60-0104 Browse NE Software Version	184
+T60-0105 Upgrade/change NE software	184
+T60-0106 Back up NE software	185
+T61 Trace management	186
+T61-0101 Creating a Tracing Task	186
+T61-0102 Deleting a Tracing Task	186
+T62 Inventory Management	186
+T62-0101 Inventory Information Query	186
+T63 Interworking with MCI’s EPC NEs	186
+T63-0101 HSS	186
+T63-0102 IMS	186
+T63-0103 Billing and Charging	186
+T63-0104 Northbound Systems	186
+T63-0105 Faraz	186
+T63-0106 iService	186
+T64 Service Tests	187
+T64-0101 Web Browsing	187
+T64-0102 Streaming	187
+T64-0103 CSFB	187
+T64-0104 VoLTE	187
+T64-0105 ViLTE	187
+T64-0106 FTP Download	187
+T64-0107 Stress test	188
+T64-0108 Number of users	188
+T64-0109 Capacity	188
+T65 Security Tests	188
+T66 LI Tests	188
+بخش 3: Appendix I	189
+T67 of KPIs for 4G EPC	189
+T68 PS Core	189
+T68-0101 AAA_transactions_per_subscriber_@BH(Core)	189
+T68-0102 Attach_default_bearer_activation_times_per_attached_subscriber@BH(Core)	190
+T68-0103 Average_bearer_number_per_attached_subscriber@BH(Core)	191
+T68-0104 Average_Bearer_Number_Per_Attached_Subscriber_@BH_(Core)	193
+T68-0105 Average_default_bearer_activation_request_number_per_attached_subscriber@BH(Core)	194
+T68-0106 Detach_Default_bearer_deactivation_times_per_attached_subscriber@BH(Core)	194
+T68-0107 Average_Default_Bearer_numbers_per_attached_Subscriber_@BH(Core)	195
+T68-0108 Average_PacketSize(Bytes)_@BH(Gi_SGi)_downlink(Core)	195
+T68-0109 Average_PacketSize(Bytes)_@BH(Gi_SGi)_uplink(Core)	195
+T68-0110 Average_traffic_per_active_bearer(Kbps)_@BH(Core)	195
+T68-0111 Average_traffic_per_active_bearer_4G(Kbps)_@BH(Core)	195
+T68-0112 Detach_Default_bearer_deactivation_times_per_attached_subscriber@BH(Core)	195
+T68-0113 Paging_times_per_attached_subscriber@BH(Core)	195
+T68-0114 Percentage_of_PGW_Bearer(Core)	195
+T68-0115 Percentage_of_SGW_Bearers(Core)	197
+T68-0116 Percentage_of_S-PGW_Bearers(Core)	197
+T68-0117 S1_mode_average_bearer_numbers_per_attached_subscriber_@BH(Core)	197
+T68-0118 S1_Mode_Paging_SR_for_SMS(Core)	199
+T68-0119 S1_mode_service_request_times_per_subscriber@BH(Core)	200
+T68-0120 S1_release_procedure_per_attached_subscriber_@BH(Core)	200
+T68-0121 Service_request_CausedByUEandNetwork_times_per_attached_subscriber@BH(Core)	202
+T68-0122 Total_Average_Packet_Size(Bytes)_@BH(Core)	203
+T68-0123 VoLTE_voice_call_times_per_attached_subscriber_@BH(Core)	203
+T69 Core PS optimization	204
+T69-0101 4G_AttachDefault_bearer_activation_times_per_attached_subscriber_@BH(Core)	204
+T69-0102 4G_Average_trafic_per_active_bearer_@BH(Kbps)(Core)	205
+T69-0103 4G_bearer_modification_times_per_attached_subscriber_@BH(Core)	206
+T69-0104 4G_Dedicated_bearer_activation_times_per_attached_subscriber_@BH(Core)	207
+T69-0105 4G_S1_release_procedure_per_attached_subscriber_@BH(Core)	208
+T69-0106 4G_Service_request_CausedByNetwork_times_per_attached_subscriber_@BH(Core)	209
+T69-0107 4G_Throughput_to_Total_Rate(Core)	211
+T69-0108 4G_Traffic(MB)(Core)	211
+T69-0109 4G_Traffic(MB)_Per_Average_PDP(Core)	211
+T69-0110 GW_DNS_Traffic_Rate%_per_APN(Core)	211
+T69-0111 GW_Downlink_DNS_Traffic_Rate%_per_APN(Core)	211
+T69-0112 GW_Uplink_DNS_Traffic_Rate%_per_APN(Core)	211
+T69-0113 GW_uplink_discard_packets_for_invalid_destination_IP_for_IPV4(number)(Core)	211
+T69-0114 Interim_Gy_online_charging_transaction_times_per_Gy_bearer_@BH(Core)	212
+T69-0115 Percentage_of_Gy_online_bearer_%(Core)	212
+T69-0116 Percentage_of_Radius_authentication_bearer_%(Core)	212
+T69-0117 Percentage_of_Radius_authentication_bearer_%_new(Core)	212
+T69-0118 P-GW(K)_Bearers(Core)	212
+T69-0119 S+PGW(k)_Bearers(Core)	213
+T69-0120 S-GW(k)_Bearers(Core)	214
+T69-0121 Throughput_Per_RAT(4G)(Gbps)(Core)	215
+T69-0122 Throughput_Per_RAT_per_PDP(4G)(Core)	215
+T69-0123 4G_Average_packet_size_@BH_Byte(core)	215
+T69-0124 4G_payload_of_Uplink_to_Downlink(%)(Core)	216
+T69-0125 4G_Payload_per_PDP(MB)(Core)	217
+T69-0126 4G_Throughput_per_average_bearer(Kbps)(Core)	219
+T69-0127 Activated_duration_per_PDP_context(Core)	219
+T69-0128 All_downlink_packets_discard_due_to_account_balance_insufficiency%(Core)	219
+T69-0129 All_uplink_packets_discard_due_to_account_balance_insufficiency%(Core)	220
+T69-0130 Downlink_GW_discard_packets_due_to_packet_abnormality_ratio(%)(Core)	222
+T69-0131 Gi_Uplink_To_Downlink_Traffic_Ratio(%)(Core)	222
+T69-0132 GW_discard_packets_for_FUI_flow_control_without_quota(Core)	222
+T69-0133 GW_downlink_discard_packets_for_FUI(%)(Core)	222
+T69-0134 GW_downlink_discard_packets_for_policy_failed_ratio(%)(Core)	222
+T69-0135 GW_incoming_downlink_user_traffic_in_packets(Core)	222
+T69-0136 GW_outgoing_downlink_user_traffic_in_packets(Core)	223
+T69-0137 GW_uplink_discard_packets_for_FUI(%)(Core)	224
+T69-0138 GW_uplink_discard_packets_for_FUI(number)(Core)	224
+T69-0139 GW_uplink_discard_packets_for_invalid_destination_IP_for_IPV4(number)(Core)	224
+T69-0140 GW_uplink_discard_packets_for_invalid_destination_IP_for_IPV4_ratio(%)(Core)	226
+T69-0141 GW_uplink_discard_packets_for_invalid_destination_IP_for_IPv6(Core)	226
+T69-0142 GW_uplink_discard_packets_for_policy_failed(Core)	227
+T69-0143 GW_uplink_discard_packets_for_policy_failed_ratio(%)(Core)	227
+T69-0144 GW_uplink_discard_packets_for_spam_email(Core)	228
+T69-0145 Number_of_current_quintuple_nodes_in_use_per_PDP(Core)	228
+T69-0146 Number_of_uplink_GW_discarded_packets_due_to_account_balance_insufficiency(number)(Core)	228
+T69-0147 Number_of_uplink_GW_discarded_packets_due_to_packet_abnormality(number)(Legacy)(Core)	228
+T69-0148 Number_of_uplink_GW_discarded_packets_due_to_packet_abnormality(number)(vEPC)(Core)	228
+T69-0149 Number_of_uplink_GW_discarded_packets_due_to_rule_matching(number)(legacy)(Core)	228
+T69-0150 Number_of_uplink_GW_discarded_packets_due_to_rule_matching(number)(vEPC)(Core)	228
+T69-0151 The_DL_total_number_of_GW_discard_packet_rate(%)(Core)	229
+T69-0152 The_DL_total_number_of_GW_discard_packet_rate(%)_Legacy(Core)	229
+T69-0153 The_UL_total_number_of_GW_discard_packet_rate(%)(Core)	229
+T69-0154 The_UL_total_number_of_GW_discard_packet_rate(%)_Legacy(Core)	230
+T69-0155 PGW_Downlink_data_forward_SR(Core)	230
+T69-0156 PGW_Downlink_data_forward_SR(Core)Test	230
+T69-0157 PGW_Uplink_data_forward_SR(Core)	230
+T69-0158 PGW_Uplink_data_forward_SR(Core)Test	230
+T69-0159 Uplink_GW_discarded_packets_due_to_packet_abnormality_ratio(%)(Core)	230
+T69-0160 vPGW_Downlink_data_forward_SR(Core)	230
+T69-0161 vPGW_Uplink_data_forward_SR(Core)	230
+1- Opt Report	230
+T70 CCA_U_5xxx_Failure_Per_CCR_I_Request%(Core)	230
+T70-0101 CCR_I_Request_per_Total_PDP_Request%(Core)	232
+T70-0102 Total_Success_PDP_Per_Total_Request_PDP%(Core)	232
+T70-0103 There is eps bearer in lte instead of pdp context	232
+2- Miscellaneous	233
+T71 4G_maximum_attached_users(Core)	233
+T71-0101 CGPOMU_Maximum_CPU_Load(Core)	235
+T71-0102 Gx_CCRI_Success_Rate(%)	237
+T71-0103 Gx_CCRT_Success_Rate(%)	237
+T71-0104 Gx_CCRU_Success_Rate(%)	237
+T71-0105 Gx_Interface_Timely_Response_Rate(Core)	237
+We can demonstrate the accuracy of this process to you using packet capture.	237
+T71-0106 Gy_Interface_Timely_Response_Rate(Core)	239
+We can demonstrate the accuracy of this process to you using packet capture.	239
+T71-0107 Online_Charging_Response_Rate(Core)	240
+T71-0108 Outbound_Bandwidth_Utilization_Test(Core)	242
+T71-0109 PDP_context_activation_success_rate_%(Core)	242
+T71-0110 PGW_create_bearer_context_success_ratio_%(Core)	244
+T71-0111 S1_mode_maximum_bearer_number(Core)	244
+T71-0112 S1_mode_packet_paging_SR(Core)	245
+T71-0113 SGW_create_bearer_context_success_ratio_%(Core)	247
+T72 PGW_Authentication_SR(Core)	248
+T72-0101 PGW_Avtivated_duration_per_PDP_context(Core)	248
+T72-0102 PGW_RADIUS_accounting_SR(Core)	248
+T72-0103 PGW_RADIUS_accounting_SR_2(Core)	248
+T72-0104 PGW_RADIUS_accounting_stop_SR(Core)	249
+T72-0105 PGW_S+PGW_create_T72-0107bearer_context_Request(Core)	249
+T72-0106 PGW_S+PGW_create_bearer_context_SR(Core)	251
+T72-0107 PGW_create_bearer_context_success_ratio_%(Core)	253
+2-1- S1_Mode_Combined_Attach_failure_Times_per_PLMN_(times)	255
+3- PCRF	256
+T73 Service accessibility	256
+ IP_CAN_Session_Establishment_Requests.	256
+T73-0101 We can demonstrate the accuracy of this process to you using packet capture.	256
+T73-0102 IP_CAN_Session_Establishment_SR%	258
+We can demonstrate the accuracy of this process to you using packet capture.	258
+T73-0103 IP_CAN_Session_Lost_Rate%	259
+T73-0104 IP_CAN_Session_Termination_Requests	261
+T73-0105 IP_CAN_Session_Traffic	262
+T73-0106 PCEF_Initiated_IP_CAN_Session_Modification_Requests	264
+T73-0107 PCEF_Initiated_IP_CAN_Session_Modification_SR%	264
+T73-0108 PCRF_Initiated_IP_CAN_Session_Modification_Requests	264
+T73-0109 PCRF_Initiated_IP_CAN_Session_Modification_SR%	265
+4- PCRF peer session abort cause	267
+T73-0110 Number_of_Requests_with_Session_IP_Address_Conflict(Core)	267
+T73-0111 Number_of_Requests_with_Subscriber_IP_Address_conflict(Core)	268
+5- Miscellaneous	270
+T74 AF_Session_Loss_Rate(Core)	270
+T74-0101 AF_Session_Traffic(Core)	270
+T74-0102 Average_Duration_for_Processing_a_Diameter_Message	270
+T74-0103 Average_Number_of_Established_AF_Sessions	271
+T74-0104 Maximum_Duration_for_Processing_a_Diameter_Message	271
+T74-0105 Maximum_number_of_online_sessions_over_Rx_interface(Core)	272
+T74-0106 Maximum_number_of_Signalling_online_essions_over_Rx_interface	274
+T74-0107 Number_of_AF_Session_Flow_Released	274
+T74-0108 Number_of_Attempted_AF_Session_Termination_Requests	274
+T74-0109 Number_of_Attempted_Calling_Rx_Session_Establishment_Requests	274
+T74-0110 Number_of_Attempted_Signalling_Rx_Session_Establishment_Requests	274
+T74-0111 Number_of_Diameter_Requests	274
+T74-0112 Number_of_Failed_Signalling_Rx_Session_Establishment_Requests	275
+T74-0113 Number_of_Gx_CCR_I_messages_with_the_duration_exceeding_threshold	275
+T74-0114 Number_of_messages	275
+T74-0115 Number_of_Messages_with_INSUFFICIENT_BEARER_RESOURCES	275
+T74-0116 Number_of_Messages_with_INSUFFICIENT_SERVER_RESOURCES	275
+T74-0117 Number_of_Messages_with_Other_Abnormality_Causes	275
+T74-0118 Number_of_Messages_with_PS_TO_CS_HANDOVER	276
+T74-0119 Number_of_Messages_with_SPONSORED_DATA_CONNECTIVITY_DISALLOWED	276
+T74-0120 Number_of_Resource_Requests_Discarded_Due_to_Overload(Core)	276
+T74-0121 Number_of_Responses_with_DIAMETER_AVP_OCCURS_TOO_MANY_TIMES	277
+T74-0122 Number_of_Responses_with_DIAMETER_COMMAND_UNSUPPORTED	279
+T74-0123 Number_of_Responses_with_DIAMETER_INVALID_HDR_BITS	280
+ Number_of_Responses_with_DIAMETER_SUCCESS	280
+T74-0124	280
+T74-0125 Number_of_Responses_with_DIAMETER_TOO_BUSY	281
+ Number_of_Responses_with_DIAMETER_UNABLE_TO_DELIVER	282
+T74-0126	282
+ Number_of_Responses_with_DIAMETER_UNKNOWN_SESSION_ID	283
+T74-0127	283
+T74-0128 Number_of_Rx_ASR_messages_with_the_duration_exceeding_threshold	285
+T74-0129 Number_of_Static_Subscribers_Served_by_the_SPR(Core)	285
+T74-0130 Number_of_Successful_AF_Session_Termination_Requests	285
+T74-0131 Number_of_Successful_Signalling_Rx_Session_Establishment_Requests	285
+T74-0132 Number_of_Timed_Out_AF_Session_Update_Requests	287
+T74-0133 Success_Rate_for_AF_Session_Establishment	287
+T74-0134 Success_Rate_for_AF_Session_Modification	287
+T74-0135 Success_Rate_for_AF_Session_Update(Core)	287
+T74-0136 UPCC_Maximum_number_of_4G_Estabilished_session(Core)	287
+T74-0137 UPCC_Maximum_number_of_Established_session(Core)	288
+T74-0138 UPCC_Mean_CPU_Usage(Core)	288
+T74-0139 UPCC_Mean_CPU_Usage_Per_Module(Core)	288
+T74-0140 UPCC_Peak_CPU_Usage(Core)	288
+T74-0141 UPCC_Peak_CPU_Usage_Per_Module(Core)	288
+T74-0142 USCDB_CPU_Overload_Duration(Sec)(Core)	288
+T74-0143 USCDB_Used_Memory_Size(MB)(Core)	288
+T75 S+PGW:	288
+T75-0101 GTP_based_S5/S8(SGW)_downlink_user_traffic(TB)	288
+T75-0102 GTP_based_S5/S8(SGW)_total_user_traffic(TB)	289
+T75-0103 GTP_based_S5/S8(SGW)_uplink_user_traffic(TB)	290
+T75-0104 GTP_based_S5/S8(SGW)_uplink_user_traffic_peak_throughput_in(KB/s)	292
+T75-0105 PGW_bearer_license_Used_Resources	293
+T75-0106 PGW_bearers_activation_requests	293
+T75-0107 PGW_create_bearer_success_ratio	296
+T75-0108 PGW_successful_bearers_activations	297
+T76 S+PGW_active_bearer_Users	299
+T76-0101 SGi_uplink_user_traffic_peak_throughput_in(KB/s)	300
+T76-0102 SGi_uplink_user_traffic_peak_throughput_in(MB/s)	300
+T76-0103 SGW_bearer_license_used_resources	300
+T76-0104 SGW_create_bearer_requests	302
+T76-0105 SGW_create_bearer_success_ratio	304
+T76-0106 SGW_successful_bearer_creations	306
+T76-0107 Total_PDP_Bearer_License_used_Resource	308
+6- PGW:	310
+T77 1-Traffic	310
+T77-0101 4G_PS_Payload_per_PDP	310
+T77-0102 APN_Downlink_Traffic(MB)_(GGSN+PGW)	311
+T77-0103 APN_Total_Traffic_GB	311
+T77-0104 APN_Uplink_Traffic(MB)_(GGSN+PGW)	312
+T77-0105 DownlinTraffic/TotalTraffic%	312
+T77-0106 In/Out_UL_traffic_differences(GB)	312
+T77-0107 MAX_Data_Traffic(Gi+SGi)_TB	313
+T77-0108 Service_ID_Downlink_Traffic(GB)	313
+T77-0109 Service_ID_Uplink_Traffic(GB)	313
+T77-0110 SGi(LTE)_traffic_GB	313
+T77-0111 SGi_DL_user_Throughput(Gbps)(Core)	314
+T77-0112 SGi_DL_user_traffic_TB	315
+ SGi_UL_user_traffic_TB	317
+T77-0113	317
+T77-0114 Total_Data_Traffic(Gi+SGi)_MB/PDP(Core)	318
+T77-0115 Total_Data_Traffic(Gi+SGi)_TB	318
+T77-0116 Traffic_Per_User(MB)	318
+T77-0117 uptodown%inPGW	318
+T78 2-Current user	318
+T78-0101 Average_current_user_in_PGW_2G_3G_4G	318
+T78-0102 GGSN_Current_Direct_Tunnel_PDP	318
+T78-0103 GGSN_Max_Users_per_APN	319
+T78-0104 Max_Users_(APN)	319
+T78-0105 maximum_current_user_in_PGW_2G_3G_4G	320
+T78-0106 Maximum_Total(2G+3G+4G)_Users_APN	320
+T79 3- Throughput:	322
+T79-0101 APN_Downlink_Thruput(GGSN+PGW)	322
+ APN_Uplink_Thruput(GGSN+PGW)	324
+T79-0102	324
+T79-0103 Current_PGW_Throughput(Gbps)	325
+T79-0104 Current_PGW_Throughput(Gbps)(5Min)	326
+T79-0105 GGSN_Direct_Tunnel-THP_Gbps	328
+T79-0106 SGi_Peak_DL_Thoughput(Gbps)	328
+T79-0107 Gi+SGi_Peak_DL_Thoughput(Gbps)	329
+T79-0108 Gi+SGi_Peak_DL_Thoughput(Gbps)(5Min)	329
+T79-0109 -SGi_Peak_DL_Thoughput(Gbps)(5Min)	329
+T79-0110 Gi+SGi_Peak_DL_Thoughput(Gbps)_vEPC(Core)	331
+T79-0111 Gi+SGi_Peak_UL_Thoughput(Gbps)	331
+T79-0112 Gn_downlink_peak_throughput_of_UTRAN_rat_in_MBps	331
+T79-0113 Throughput_per_User_(Mbps)	331
+T79-0114 PGW _Throughput_per_PDP	331
+T79-0115 user_throughput_in_GW	332
+T80 4- GW basic session management	332
+T80-0101 current_active_bearers_with_EUTRAN_rat	332
+T80-0102 current_active_bearers_with_GERAN_rat	334
+T80-0103 current_active_bearers_with_utran_rat	334
+T80-0104 current_active_bearers_with_WLAN_rat	334
+T80-0105 GW_Active_bearer	334
+T80-0106 GW_bearers_act_failed_OCS_return_result_code_indicating_an_abnormality	336
+T80-0107 GW_bearers_act_failed-OCS_Server_NoResponse	336
+T80-0108 GW_bearers_act_failed-PCRF-return-result-code-abnormal	336
+T80-0109 GW_MAXIMUM_SIMULTANEOUSLY_ACTIVE_BEARERS	336
+T80-0110 GW_successful_bearer_creations_SR	337
+T80-0111 GW_successful_bearers_creation	339
+T80-0112 IP_pool_usage	340
+T80-0113 request-success	342
+T81 5- Specified SPU instance	343
+T81-0101 current_activated_PDP_context(SPU_instance)	343
+T81-0102 GW_incoming_DL_User_traffic(SPU_instance)_GB	343
+T81-0103 GW_outgoing_UL_User_traffic(SPU_instance)_GB	343
+T81-0104 GW_total_User_traffic(SPU_instance)_GB	343
+T81-0105 GW_total_User_traffic(SPU_instance)_Gb/s(Core)	343
+T81-0106 PDP_context_activation_SR(SPU_instance)	343
+T81-0107 Successful_PDP_context_activation(SPU_instance)	343
+T82 6- Specified APN	343
+T82-0101 Activated_Duration_Per_PDP_Context(APN)	343
+T82-0102 Activation_Requests_Per_PDP_Context(APN)	345
+T82-0103 GW_user_traffic_with_invalid_Destination_address_in_packets(APN)	346
+T82-0104 GW_user_traffic_with_invalid_Destination_address_in_packets(APN)(Core)	348
+T82-0105 GW_user_traffic_with_invalid_source_address_in_packets(APN)	350
+T82-0106 GW_user_traffic_with_invalid_source_address_in_packets(APN)(Core)	352
+T82-0107 SubScriber_With_PDP_Context_Activation(APN)	354
+T83 7- PGW user number measurement	356
+T83-0101 PGW_Average_Avtive_Subscriber	356
+T83-0102 PGW_Max_Simultaneously_Avtive_Subscriber	357
+T84 PGW forwarding performance measurement (specified APN)	357
+T85 8- PGW forwarding performance measurement	357
+T85-0101 FUI_Dropped_Downlink_Packet(KB)	357
+T85-0102 GW_Packet_size_Specific_TAC_Legacy(Byte)	357
+T85-0103 GW_Packet_size_Specific_TAC_TOTAL(Byte)	357
+T85-0104 GW_Packet_size_Specific_TAC_V(Byte)	357
+T85-0105 GW_User_Traffic_Specific_TAC_(GB)	358
+T85-0106 GW_User_Traffic_Specific_TAC_TOTAL(GB)	359
+T85-0107 PGW_Max_number_of_Active_EPS_Bearer	361
+7- SGI	362
+T86 SGi_downlink_user_traffic_peak_throughput_in(Mbps)	362
+T86-0101 SGi_downlink_user_traffic_peak_throughput_in_Per_PGW_Max_Simultaneously_Avtive_Subscriber	364
+T86-0102 SGi_downlink_user_traffic_in_MB_(APN)	366
+T86-0103 SGi_downlink_user_traffic_peak_throughput_in_MB/s_(APN)	367
+T86-0104 SGi_uplink_user_traffic_in_MB_(APN)	369
+T86-0105 SGi_upnlink_user_traffic_peak_throughput_in(Mbps)	371
+T86-0106 SGi_downlink_user_traffic_in_MB_(APN)	371
+T86-0107 SGi_downlink_user_traffic_peak_throughput_in_MB/s_(APN)	371
+T86-0108 SGi_uplink_user_traffic_in_MB_(APN)	371
+T86-0109 SGi_upnlink_user_traffic_peak_throughput_in(Mbps)	371
+T87 S5/s8	371
+T87-0101 - S5/S8 (SGW) interface signal measure	371
+T88 S11/s4	371
+T88-0101 11- S11/S4 interface signal performance measure	371
+T88-0102 S11/S4_incomming_Dedicated_Bearer_Reponse	371
+T88-0103 S11/S4_incomming_Default_Bearer_Req	371
+T88-0104 S11/S4_outgoing_Dedicated_Bearer_Req	371
+T88-0105 S11/S4_outgoing_Default_Bearer_Response	371
+T88-0106 12- SGW basic session measurement	371
+T88-0107 PGW_5G_License_Usage_User	371
+T88-0108 S+PGW_maximum_simultaneously_active_bearers	371
+T88-0109 SGW_Average_Simultaneously_Attached_Active_User(Core)	371
+T88-0110 SGW_create_bearer_requests(Core)	373
+T88-0111 SGW_Current_Simultaneously_Attached_Active_User(Core)	373
+T88-0112 SGW_Failed_bearer_creations_via_S11/S4_NoResourcesAvailable(Core)	373
+T88-0113 SGW_Failed_bearer_creations_via_S11/S4_NoResourcesAvailable_No_Bearer(Core)	373
+T88-0114 SGW_Failed_bearer_creations_via_S11/S4_NoResourcesAvailable_No_License(Core)	373
+T88-0115 SGW_Failed_bearer_creations_via_S11/S4_NoResourcesAvailable_No_QOS(Core)	374
+T88-0116 SGW_Max_number_of_active_bearer	374
+T88-0117 SGW_Maximum_Simultaneously_Attached_Active_User(Core)	375
+T88-0118 SGW_Network_Triggered_Service_Request_attempt_counter(Core)	377
+T88-0119 SGW_request-success	377
+T89 PGW basic session measurement (specified APN)	378
+T89-0101 PGW_average_active_subscribers(specified_APN)	378
+T89-0102 PGW_current_active_subscribers_(specified_APN)	379
+T89-0103 PGW_maximum_simultaneously_active_subscribers(specified_APN)	381
+T89-0104 SGW_Max_number_of_Active_EPS_Bearers	382
+T89-0105 Direct tunnel usage (core)	382
+T89-0106 PDP_Context_Usage(Core)	382
+T89-0107 Note : in lte we have eps instead of pdp	382
+T89-0108 PGW_IP_Pool_Usage_Per_APN(Core)	384
+T90 VPLMN	385
+T90-0101 GW_Create_Bearer_request_times(VPLMN)	385
+T90-0102 GW_Create_Bearer_SR%(VPLMN)	387
+T90-0103 GW_Create_Bearer_success_times(VPLMN)	388
+T90-0104 GW_Current_Acticve_Subscriber(VPLMN)	390
+T90-0105 GW_Maximum_Simultaneously_Active_Bearer(VPLMN)	390
+T90-0106 Incoming_uplink_user_traffic_in_GB_(SGSN/SGW_PLMN)	391
+T90-0107 Incoming_uplink_user_traffic_in_packets_(SGSN/SGW_PLMN)	391
+T90-0108 Outgoing_downlink_user_traffic_in_GB_(SGSN/SGW_PLMN)	391
+T90-0109 Outgoing_downlink_user_traffic_in_packets_(SGSN/SGW_PLMN)	392
+T90-0110 Total_user_traffic_in_GB_(SGSN/SGW_PLMN)	392
+T91 17- physical port	392
+T91-0101 Physical_Port_Throughput_recieved(Mbit/s)(Core)	392
+T91-0102 Physical_Port_Throughput_recieved(Mbit/s)(GI)	393
+T91-0103 Physical_Port_Throughput_recieved(Mbit/s)(Gn)	393
+T91-0104 Physical_Port_Throughput_Sent(Mbit/s)(Core)	393
+T91-0105 Physical_Port_Throughput_Sent(Mbit/s)(Gi)	394
+T91-0106 Physical_Port_Throughput_Sent(Mbit/s)(Gn)	394
+T92 18- Gx KPIs	395
+T92-0101 Average_delay_time_of_CCA_I_(PCC)	395
+T92-0102 Average_delay_time_of_CCA_T_(PCC)	396
+T92-0103 Average_delay_time_of_CCA_U_(PCC)	398
+T92-0104 Gx_Success_Rate_(CC)_(%)	400
+T92-0105 Number_of_resend_CCR-I_message_(PCC)	402
+T92-0106 Number_of_resend_CCR-T_message_(PCC)	403
+T92-0107 Number_of_resend_CCR-U_message_(PCC)	405
+T92-0108 PCC_Received_ASR_Messages	407
+T92-0109 PCC_Received_CCA-I_Messages(Core)	407
+ PCC_Received_CCA-T_Message(Core)	409
+T92-0110	409
+T92-0111 PCC_Received_CCA-U_Messages(Core)	411
+T92-0112 PCC_Received_RAR_Messages	412
+T92-0113 PCC_Sent_ASA_Messages	414
+T92-0114 PCC_Sent_CCR-I_Messages(Core)	416
+T92-0115 PCC_Sent_CCR-T_Messages(Core)	417
+T92-0116 PCC_Sent_CCR-U_Messages(Core)	419
+T92-0117 PCC_Sent_RAA_Messages	420
+T93 19-Gy KPIs	420
+T93-0101 Average_delay_time_of_CCA-I(OCS)	420
+ Average_delay_time_of_CCA-T(OCS)	422
+T93-0102	422
+T93-0103 Average_delay_time_of_CCA-U(OCS)	423
+T93-0104 Average_online_charging_PDP_contexts	425
+T93-0105 CCR_Initial_request(Core)	426
+T93-0106 CCR_Termination_request(Core)	428
+T93-0107 CCR_Update_request(Core)	429
+T93-0108 Failover_resend_message	430
+T93-0109 Gy_CCR-I_Success_Rate_(%)	430
+T93-0110 Gy_CCR-T_Success_Rate_(%)	433
+T93-0111 Gy_CCR-U_Success_Rate_(%)	435
+T93-0112 Gy_Success_Rate(RAR_ASR)	437
+T93-0113 Maximum_online_charging_PDP_contexts(OCS)	437
+T93-0114 Number_of_CCA_I_Received	438
+T93-0115 Number_of_CCA_T_Received	439
+T93-0116 Number_of_CCA_U_Received	440
+Number_of_CCA_U_Received	440
+T93-0117 Number_of_CCR_message_trigger_by_bearer_update	441
+Number_of_CCR_message_trigger_by_bearer_update	441
+T93-0118 Number_of_CCR_message_trigger_by_MSCC_level_Validity_Time_expire	442
+7-1- Number_of_CCR_message_trigger_by_MSCC_level_Validity_Time_expire	442
+T93-0119 Number_of_CCR_message_trigger_by_service_begin	443
+7-2- Number_of_CCR_message_trigger_by_service_begin	443
+T93-0120 Number_of_CCR_message_trigger_by_time_quota_reach_threshold	445
+Number_of_CCR_message_trigger_by_time_quota_reach_threshold	445
+T93-0121 Number_of_CCR_message_trigger_by_volume_quota_exhausted	446
+Number_of_CCR_message_trigger_by_volume_quota_exhausted	446
+T93-0122 Number_of_CCR_message_trigger_by_volume_quota_reach_threshold	447
+T93-0123 Number_of_received_CCA_packets_with_result_code_means_peer_overload(Core)	450
+T93-0124 Number_of_resend_CCR-I_message(OCS)	450
+T93-0125 Number_of_resend_CCR-T_message(OCS)	450
+T93-0126 Number_of_resend_CCR-U_message(OCS)	452
+T93-0127 Receive_FUI_AVP	453
+T93-0128 Received_MSCCs_with_class_2/Received_MSCCs_with_class_4	453
+T93-0129 total_delay_time_of_CCA-U(OCS)	454
+T94 20- Gx result codes	456
+T94-0101 Number_of_ASA_message_with_2001_Result-Code_(PCC)	456
+T94-0102 Number_of_ASA_message_with_other_Result-Code_(Not_2001)_(PCC)	458
+T94-0103 Number_of_CCA-I_message_with_2001_Result-Code_(PCC)	460
+T94-0104 Number_of_CCA-I_message_with_2xxx_(exclude_2001)_Result-Code_(PCC)	462
+T94-0105 Number_of_CCA-I_message_with_3xxx_Result-Code_(PCC)	464
+T94-0106 Number_of_CCA-I_message_with_4xxx_Result-Code_(PCC)	464
+T94-0107 Number_of_CCA-I_message_with_5xxx_Result-Code_(PCC)	464
+T94-0108 Number_of_CCA-T_message_with_2001_Result-Code_(PCC)	464
+T94-0109 Number_of_CCA-T_message_with_2xxx_(exclude_2001)_Result-Code_(PCC)	466
+T94-0110 Number_of_CCA-T_message_with_3xxx_Result-Code_(PCC)	468
+T94-0111 Number_of_CCA-T_message_with_4xxx_Result-Code_(PCC)	468
+T94-0112 Number_of_CCA-T_message_with_5xxx_Result-Code_(PCC)	468
+T94-0113 Number_of_CCA-U_message_with_2001_Result-Code_(PCC)	468
+T94-0114 Number_of_CCA-U_message_with_2xxx_(exclude_2001)_Result-Code_(PCC)	470
+T94-0115 Number_of_CCA-U_message_with_3xxx_Result-Code_(PCC)	472
+T94-0116 Number_of_CCA-U_message_with_4xxx_Result-Code_(PCC)	473
+T94-0117 Number_of_CCA-U_message_with_5xxx_Result-Code_(PCC)	473
+T94-0118 Number_of_RAA_message_with_2001_Result-Code_(PCC)	473
+T94-0119 Number_of_RAA_message_with_other_Result-Code_(Not_2001)_(PCC)	475
+T95 21- Gy result codes	477
+T95-0101 Deactivated_user_number_because_of_OCS_fault	477
+T95-0102 Number_of_CCA_message_with_2001_Result-Code(OCS)	479
+T95-0103 Number_of_CCA-I_message_with_2001_Result-Code(OCS)	481
+T95-0104 Number_of_CCA-I_message_with_2xxx_(exclude_2001)_Result-Code(OCS)	482
+T95-0105 Number_of_CCA-I_message_with_3xxx_Result-Code(OCS)	484
+T95-0106 Number_of_CCA-I_message_with_4xxx_Result-Code(OCS)	486
+T95-0107 Number_of_CCA-I_message_with_5xxx_Result-Code(OCS)	488
+T95-0108 Number_of_CCA-T_message_with_2001_Result-Code(OCS)	490
+T95-0109 Number_of_CCA-T_message_with_2xxx_(exclude_2001)_Result-Code(OCS)	492
+T95-0110 Number_of_CCA-T_message_with_3xxx_Result-Code(OCS)	494
+T95-0111 Number_of_CCA-T_message_with_4xxx_Result-Code(OCS)	496
+T95-0112 Number_of_CCA-T_message_with_5xxx_Result-Code(OCS)	498
+T95-0113 Number_of_CCA-U_message_with_2001_Result-Code(OCS)	500
+T95-0114 Number_of_CCA-U_message_with_2xxx_(exclude_2001)_Result-Code(OCS)	502
+T95-0115 Number_of_CCA-U_message_with_3xxx_Result-Code(OCS)	504
+T95-0116 Number_of_CCA-U_message_with_4xxx_Result-Code(OCS)	506
+T95-0117 Number_of_CCA-U_message_with_5xxx_Result-Code(OCS)	508
+T95-0118 Number_of_RAA_message_with_2001_Result-Code(OCS)	511
+T95-0119 Number_of_RAA_message_with_other_Result-Code_(Not_2001)(OCS)	511
+T95-0120 OCS_communication_fault	511
+T95-0121 Received_CCA_packets_with_class_1_result_code	512
+T95-0122 Received_Command_Level_class_2(Core)	514
+T95-0123 Received_Command_Level_class_3(Core)	515
+T95-0124 Received_Command_Level_class_4(Core)	515
+T95-0125 Received_Command_Level_class_5(Core)	515
+T95-0126 Received_MSCCs_with_class_2(Core)	515
+T95-0127 Received_MSCCs_with_class_3(Core)	515
+T95-0128 Received_MSCCs_with_class_4(Core)	515
+T95-0129 Received_MSCCs_with_class_5(Core)	515
+T96 22- GW forwarding performance (specified TAC)	515
+T96-0101 GW_downlink_user_traffic_in_KB(TAC)(Core)	515
+T96-0102 GW_downlink_user_traffic_in_KB(TAC)vPGW(Core)	516
+T96-0103 GW_uplink_user_traffic_in_KB(TAC)(Core)	516
+T96-0104 GW_uplink_user_traffic_in_KB(TAC)vPGW(Core)	518
+T97 23- vEPC	518
+T97-0101 Gi_downlink_peak_throughput_in_Gb/s(Core)	518
+T97-0102 Gi_downlink_peak_throughput_of_GERAN_rat_in_Gb/s(Core)	518
+T97-0103 Gi_downlink_peak_throughput_of_UTRAN_rat_in_Gb/s(CORE)	518
+T97-0104 Gi_uplink_peak_throughput_in_Gb/s(Core)	518
+T97-0105 Gi_uplink_peak_throughput_of_GERAN_rat_in_Gb/s(Core)	518
+T97-0106 Gi_uplink_peak_throughput_of_UTRAN_rat_in_Gb/s(Core)	518
+T97-0107 Gn_downlink_peak_throughput_in_Gb/s(Core)	518
+T97-0108 Gn_Downlink+Uplink_Throughput(Gbps)	518
+T97-0109 Gn_uplink_peak_throughput_in_Gb/s(Core)	518
+T97-0110 Gn_Uplink+Downlink_Throughput(GRAN)_Gbps	518
+T97-0111 Gn_Uplink+Downlink_Throughput_UTRAN(Gbps)	518
+T97-0112 S1U_Downlink_Througput(Gbps)	518
+T97-0113 S1-u_downlink_user_traffic_peak_throughput_in_Gb/s(Core)	520
+T97-0114 S1U_Downlink+Uplink_Throughput(Gbps)	521
+T97-0115 S1U_Uplink_Througput(Gbps)	521
+T97-0116 S1-U_uplink_user_traffic_peak_throughput_in_Gb/s(Core)	521
+T97-0117 SGi_downlink_user_traffic_peak_throughput_in_Gb/s(Core)	521
+T97-0118 SGi_uplink_user_traffic_peak_throughput_in_Gb/s(Core)	521
+T97-0119 Total_(Gi+SGi)_Downlink_Throughput(Gb/s)_vEPC(Core)	521
+T97-0120 Total_(Gi+SGi)_Uplink_Throughput(Gb/s)_vEPC(Core)	521
+T97-0121 Total_(S1u+Gn)_Downlink_Throughput(Gb/s)_vEPC(Core)	521
+T97-0122 Total_(S1u+Gn)_Uplink_Throughput(Gb/s)_vEPC(Core)	521
+T97-0123 Total_Direct_Tunnel_Traffic(GB)	522
+T98 24- Virtual port performance measurement	522
+T98-0101 Gi_virtual_port_Rate_In	522
+T98-0102 Gi_virtual_port_Rate_Out	522
+T98-0103 Gn_virtual_port_Rate_In	522
+T98-0104 Gn_virtual_port_Rate_Out	522
+T98-0105 Port_Input_All_Packets	522
+T98-0106 Port_Input_Dropped_Packets	522
+T98-0107 Port_Input_Error_Packets	522
+T98-0108 Port_input_octets	522
+T98-0109 Port_Input_Peak_Rate_(Mbps)	522
+T98-0110 Port_Input_Peak_Rate_Packets	522
+T98-0111 Port_Output_All_Packets	522
+T98-0112 Port_Output_Dropped_Packets	522
+T98-0113 Port_Output_Error_Packets	522
+T98-0114 Port_Output_Octets	522
+T98-0115 Port_Output_Peak_Rate_(Mbps)	522
+T98-0116 Port_Output_Peak_Rate_Packets	522
+T99 25- GW forwarding performance measurement	522
+T99-0101 The_Rate_of_downlink__all_discarded_packets_due_to_account_balance_insufficiency(Core)	522
+T99-0102 The_Rate_of_Total_discarded_packets_due_to_account_balance_insufficiency(Core)	522
+T99-0103 The_Rate_of_uplink_all_discarded_packets_due_to_account_balance_insufficiency(Core)	523
+T100 26- S+PGW	523
+T100-0101 P-GW_Bearer_Used_Resource(Core)	523
+T100-0102 S+PGW_Number_of_Active_EPS(APN	523
+T100-0103 S-GW_Bearer_Used_Resource(Core)	523
+T101 27-GW forwarding performance measurement (specified APN)	523
+T101-0101 Downlink_user_traffic_discarded_in_packets_Rate%_(IMS_APN)(Core)	523
+T101-0102 GW_incoming_downlink_user_traffic_in_KB(APN)(Core)	523
+T101-0103 GW_incoming_uplink_user_traffic_in_KB(APN)(Core)	523
+T101-0104 GW_outgoing_downlink_user_traffic_in_KB(APN)(Core)	523
+T101-0105 GW_outgoing_uplink_user_traffic_in_KB(APN)(Core)	523
+T101-0106 Uplink_user_traffic_discarded_in_packets_Rate%_(IMS_APN)(Core)	523
+T102 28- PGW VNFC Counters (L7 parser performance measurement)	523
+T102-0101 L34_parser_downlink_packets(Core)	523
+T102-0102 L34_parser_uplink_packets(Core)	523
+T102-0103 L7_(SA)_DNS_downlink_packets(Core)	523
+T102-0104 L7_(SA)_DNS_uplink_packets(Core)	523
+T102-0105 L7_(SA)_FUI_packets(Core)	523
+T102-0106 L7_(SA)_HTTP_downlink_packets(Core)	523
+T102-0107 L7_(SA)_HTTP_uplink_packets(Core)	524
+T102-0108 L7_(SA)_HTTPS_downlink_packets(Core)	524
+T102-0109 L7_(SA)_HTTPS_uplink_packets(Core)	524
+T102-0110 L7_(SA)_Others_downlink_packets(Core)	524
+T102-0111 L7_(SA)_Others_uplink_packets(Core)	524
+T102-0112 L7_(SA)_parser_input_packets(Core)	524
+T102-0113 L7_(SA)_parser_output_packets(Core)	524
+T102-0114 L7_parser_DNS_downlink_packets(Core)	524
+T102-0115 L7_parser_DNS_uplink_packets(Core)	524
+T102-0116 L7_parser_downlink_packets(Core)	524
+T102-0117 L7_parser_total_packets(Core)	524
+T103 29- VoLTE KPIs	524
+T103-0101 GW_Dedicated_Bearer_Activation_Success_Rate(Core)	524
+T103-0102 GW_Default_Bearer_Activation_Success_Rate(IMS_APN)(Core)	524
+T103-0103 GW_Default_Bearer_Activation_Success_Rate(IMS_APN)(Core_PER_APN)	524
+T103-0104 VoLTE_insight_downlink_average_delay	524
+T103-0105 VoLTE_insight_downlink_average_jitter	524
+T103-0106 VoLTE_insight_downlink_average_MOS	524
+T103-0107 VoLTE_insight_downlink_average_packet_loss_ratio	524
+T103-0108 VoLTE_insight_number_of_calls_already_ended_with_accept_MOS_value	524
+T103-0109 VoLTE_insight_number_of_calls_already_ended_with_bad_MOS_value	524
+T103-0110 VoLTE_insight_number_of_calls_already_ended_with_excellent_MOS_value	525
+T103-0111 VoLTE_insight_number_of_calls_already_ended_with_good_MOS_value	525
+T103-0112 VoLTE_insight_number_of_calls_already_ended_with_poor_MOS_value	525
+T103-0113 VoLTE_insight_number_of_calls_with_abnormal_MOS_value	525
+T103-0114 VoLTE_insight_number_of_current_online_calls_with_accept_MOS_value	525
+T103-0115 VoLTE_insight_number_of_current_online_calls_with_bad_MOS_value	525
+T103-0116 VoLTE_insight_number_of_current_online_calls_with_excellent_MOS_value	525
+T103-0117 VoLTE_insight_number_of_current_online_calls_with_good_MOS_value	525
+T103-0118 VoLTE_insight_number_of_current_online_calls_with_poor_MOS_value	525
+T103-0119 VoLTE_insight_received_RTP_downlink_traffic_in_KB	525
+T103-0120 VoLTE_insight_received_RTP_downlink_traffic_in_packets	525
+T103-0121 VoLTE_insight_received_RTP_uplink_traffic_in_KB	525
+T103-0122 VoLTE_insight_received_RTP_uplink_traffic_in_packets	525
+T103-0123 VoLTE_insight_sent_RTP_downlink_traffic_in_KB	525
+T103-0124 VoLTE_insight_sent_RTP_downlink_traffic_in_packets	525
+T103-0125 VoLTE_insight_sent_RTP_uplink_traffic_in_KB	525
+T103-0126 VoLTE_insight_sent_RTP_uplink_traffic_in_packets	525
+T103-0127 VoLTE_insight_uplink_average_delay	526
+T103-0128 VoLTE_insight_uplink_average_jitter	526
+T103-0129 VoLTE_insight_uplink_average_MOS	526
+T103-0130 VoLTE_insight_uplink_average_packet_loss_ratio	526
+T104 30- Service instance	526
+T104-0101 Average_Gi_DNS_delay(Core)	526
+T104-0102 Average_HTTP_Response_Delay(millisec)(Core)	526
+T104-0103 Gi_DNS_Number_of_Requests	526
+T104-0104 Gi_DNS_success_rate%(Core)	526
+T104-0105 HTTP_Response_Success_Rate%(Core)	526
+T104-0106 Service_instance_TCP_downlink_incoming_resend_traffic_in_KB(SERVICE_INSTANCE)(Core)	526
+T104-0107 Service_instance_TCP_downlink_incoming_resend_traffic_in_packets(SERVICE_INSTANCE)(Core)	526
+T104-0108 Service_instance_TCP_downlink_incoming_traffic_in_KB(SERVICE_INSTANCE)(Core)	526
+T104-0109 Service_instance_TCP_downlink_incoming_traffic_in_packets(SERVICE_INSTANCE)(Core)	526
+T104-0110 Service_instance_TCP_downlink_outgoing_average_flow_rate_in_KB/s(SERVICE_INSTANCE)(Core)	526
+T104-0111 Service_instance_TCP_downlink_outgoing_total_download_duration(SERVICE_INSTANCE)(Core)	526
+T104-0112 Service_instance_TCP_downlink_outgoing_total_payload_traffic_in_KB(SERVICE_INSTANCE)(Core)	526
+T104-0113 Service_instance_TCP_downlink_outgoing_traffic_in_KB(SERVICE_INSTANCE)(Core)	526
+T104-0114 Service_instance_TCP_downlink_outgoing_traffic_in_packets(SERVICE_INSTANCE)(Core)	527
+T104-0115 Service_instance_TCP_flow_Num_of_wireless_conn_setup_RTT_MoreThan_wired_conn_setup_RTT(Core)	527
+T104-0116 Service_instance_TCP_flow_Num_of_wireless_conn_SetupRTT_LessThanOrEqualTo_wired_conn_SetupRTT(Core)	527
+T104-0117 Service_instance_TCP_flow_number_of_wired_average_RTT_in_range1(Core)	527
+T104-0118 Service_instance_TCP_flow_number_of_wired_average_RTT_in_range2(Core)	527
+T104-0119 Service_instance_TCP_flow_number_of_wired_average_RTT_in_range3(Core)	527
+T104-0120 Service_instance_TCP_flow_number_of_wired_average_RTT_in_range4(Core)	527
+T104-0121 Service_instance_TCP_flow_number_of_wireless_average_RTT_in_range1(Core)	527
+T104-0122 Service_instance_TCP_flow_number_of_wireless_average_RTT_in_range2(Core)	527
+T104-0123 Service_instance_TCP_flow_number_of_wireless_average_RTT_in_range3(Core)	527
+T104-0124 Service_instance_TCP_flow_number_of_wireless_average_RTT_in_range4(Core)	527
+T104-0125 Service_instance_TCP_total_flow_number(SERVICE_INSTANCE)(Core)	527
+T104-0126 Service_instance_TCP_uplink_incoming_resend_traffic_in_KB(SERVICE_INSTANCE)(Core)	527
+T104-0127 Service_instance_TCP_uplink_incoming_resend_traffic_in_packets(SERVICE_INSTANCE)	527
+T104-0128 Service_instance_TCP_uplink_incoming_resend_traffic_in_packets(SERVICE_INSTANCE)(Core)	528
+T104-0129 Service_instance_TCP_uplink_incoming_traffic_in_KB(SERVICE_INSTANCE)(Core)	528
+T104-0130 Service_instance_TCP_uplink_incoming_traffic_in_packets(SERVICE_INSTANCE)(Core)	528
+T104-0131 Service_instance_TCP_uplink_outgoing_traffic_in_KB(SERVICE_INSTANCE)(Core)	528
+T104-0132 Service_instance_TCP_uplink_outgoing_traffic_in_packets(SERVICE_INSTANCE)(Core)	528
+T104-0133 Service_instance_TCP_wired_average_connection_setup_RTT(mSec)(Core)	528
+T104-0134 Service_instance_TCP_wired_average_data_RTT(mSec)(Core)	528
+T104-0135 Service_instance_TCP_wireless_average_connection_setup_RTT(mSec)(Core)	528
+T104-0136 Service_instance_TCP_wireless_average_data_RTT(mSec)(Core)	528
+T104-0137 Service_instance_user_Average_time_delay_of_DNS_Response_(SERVICE_INSTANCE)(Core)	528
+T104-0138 Service_instance_user_Average_time_delay_of_DNS_Response_(SERVICE_INSTANCE)_test_(Core)	528
+T104-0139 Service_instance_user_Average_time_delay_of_HTTP_Response_(SERVICE_INSTANCE)(Core)	528
+T104-0140 Service_instance_user_Average_time_delay_of_HTTP_Response_(SERVICE_INSTANCE)_test(Core)	528
+T104-0141 Service_instance_user_DNS_Failed_Response_(SERVICE_INSTANCE)(Core)	528
+T104-0142 Service_instance_user_DNS_Request_(SERVICE_INSTANCE)(Core)	529
+T104-0143 Service_instance_user_DNS_Successful_Rate_(SERVICE_INSTANCE)(Core)	529
+T104-0144 Service_instance_user_DNS_Successful_Response_(SERVICE_INSTANCE)(Core)	529
+T104-0145 Service_instance_user_HTTP_1XX_Response_(SERVICE_INSTANCE)(Core)	529
+T104-0146 Service_instance_user_HTTP_200_Response_(SERVICE_INSTANCE)(Core)	529
+T104-0147 Service_instance_user_HTTP_2XX_Response_(SERVICE_INSTANCE)(Core)	529
+T104-0148 Service_instance_user_HTTP_301_Response_(SERVICE_INSTANCE)(Core)	529
+T104-0149 Service_instance_user_HTTP_302_Response_(SERVICE_INSTANCE)(Core)	529
+T104-0150 Service_instance_user_HTTP_303_Response_(SERVICE_INSTANCE)(Core)	529
+T104-0151 Service_instance_user_HTTP_3XX_Response_(SERVICE_INSTANCE)(Core)	529
+T104-0152 Service_instance_user_HTTP_404_Response_(SERVICE_INSTANCE)(Core)	529
+T104-0153 Service_instance_user_HTTP_4XX_Response_(SERVICE_INSTANCE)(Core	529
+T104-0154 Service_instance_user_HTTP_503_Response_(SERVICE_INSTANCE)(Core)	529
+T104-0155 Service_instance_user_HTTP_504_Response_(SERVICE_INSTANCE)(Core)	529
+T104-0156 Service_instance_user_HTTP_5XX_Response_(SERVICE_INSTANCE)(Core)	530
+T104-0157 Service_instance_user_HTTP_Failed_Response_(SERVICE_INSTANCE)(Core)	530
+T104-0158 Service_instance_user_HTTP_Request_(SERVICE_INSTANCE)(Core)	530
+T104-0159 Service_instance_user_HTTP_Successful_Rate_(SERVICE_INSTANCE)(Core)	530
+T104-0160 Service_instance_user_HTTP_Successful_Response_(SERVICE_INSTANCE)(Core)	530
+T104-0161 Service_instance_user_total_time_delay_of_DNS_Response_(SERVICE_INSTANCE)(Core)	530
+T104-0162 Service_instance_user_total_time_delay_of_HTTP_Response_(SERVICE_INSTANCE)(Core)	530
+T104-0163 TCP_DL_Resend_Rate(Core)	530
+T104-0164 TCP_downlink_Retransmission_Rate%(Core)	530
+T104-0165 TCP_downlink_wired_drop_packets	530
+T104-0166 TCP_UL_Resend_Rate(Core)	530
+T104-0167 TCP_uplink_Retransmission_Rate%(Core)	530
+T104-0168 TCP_uplink_wired_drop_packets	530
+T104-0169 TCP_wired_average_connection_delay(millisec)(Core)	530
+T104-0170 TCP_wired_average_delay(Core)	530
+T104-0171 TCP_wired_connection_success_ratio%(Core)	530
+T104-0172 TCP_wireless_average_connection_delay(millisec)(Core)	530
+T104-0173 TCP_wireless_average_delay(millisec)(Core)	530
+T104-0174 TCP_wireless_connection_success_ratio%(Core)	530
+T105 31- Service Resource measurement	531
+T105-0101 Average_number_of_quintuple_nodes_in_use(Core)	531
+T105-0102 Number_of_aged_quintuple_nodes(Core)	531
+T105-0103 Number_of_created_quintuple_nodes(Core)	531
+T105-0104 Number_of_current_quintuple_nodes_in_use(Core)	531
+T105-0105 Peak_number_of_quintuple_nodes_in_use(Core)	531
+T105-0106 Shaping_current_buffer_user_traffic_in_packets(Core)	531
+T105-0107 Shaping_peak_buffer_user_traffic_in_packets(Core)	531
+T106 32- Miscellaneous	531
+T106-0101 Auth_set_request(Net_synchronize_fail)(Core)	531
+T106-0102 Dropped_data_packets_of_streaming_class	531
+T106-0103 Gi_Downlink_discarded_packets_Rate(Core)	531
+T106-0104 GW_Create_Bearer_req/GW_Active_Bearer	531
+T106-0105 GW_create_bearers_request	533
+T106-0106 GW_current_active_bearers	535
+T106-0107 GW_User_Traffic_Specific_TAC_(GB)_V	536
+T106-0108 IMS_Default_Bearer_Context_SR	536
+T106-0109 Maximum_number_of_assigned_addresses_in_the_IP_address_pool_(number)	536
+T106-0110 Maximum_number_of_assigned_addresses_in_the_IP_address_pool_(number)(Core_TEST)	538
+T106-0111 Maximum_simultaneously_activated_PDP_contexts(SPU_instant)	540
+T106-0112 Number_of_addresses_in_the_IP_address_pool	540
+T106-0113 Number_of_downlink_GW_discarded_packets_due_to_account_balance_insufficiency	542
+T106-0114 Number_of_downlink_GW_discarded_packets_due_to_packet_abnormality	542
+T106-0115 Number_of_downlink_GW_discarded_packets_due_to_rule_matching	542
+T106-0116 PDP_context_activation_SR(HPLMN)	542
+T106-0117 PDP_Request_Vs_Active_PDP	542
+T106-0118 PDP_Request_Vs_Active_PDP(SPU_Instant)	542
+T106-0119 received_MSCCs_with_class_2_result_code	542
+T106-0120 received_MSCCs_with_class_4_result_code	542
+T106-0121 S+PGW_Create_default_bearer_APN_SR	542
+T106-0122 S1_mode_combined_attach_success_rate_for_non-EPS_services_New(PLMN)	545
+T106-0123 S13_messages_SR	545
+T106-0124 SUM_GW_current_active_bearers(Core)	545
+T106-0125 PGW_Peak_CDR_sending_rate_to_CG	547
+T106-0126 WEB_TEST	547
+T107 charging	550
+T107-0101 Time based chairing	550
+T107-0102 volume based charging	550
